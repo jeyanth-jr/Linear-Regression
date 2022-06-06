@@ -2,7 +2,7 @@ from ctypes import sizeof
 from statistics import mean
 import numpy as np
 import matplotlib.pyplot as plt
-data=np.genfromtxt(r'C:\Users\raman\Desktop\ML coursera\data.txt',delimiter=",")
+data=np.genfromtxt(r'data.txt',delimiter=",")
 X=data[:,0]
 Y = data[:, 1].reshape(X.size, 1)
 X = np.vstack((np.ones((X.size, )), X)).T
